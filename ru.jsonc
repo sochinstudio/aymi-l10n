@@ -1,0 +1,654 @@
+// I've documented a couple things here.
+// You don't have to translate everything, but I included
+// as much as I can just in case.
+//
+// {0}, {1}, ... are placeholders that the game fills in (a button icon,
+// a name, a link). Keep them in the sentence, but move them wherever
+// your language needs them.
+//
+// Text with multiple lines is written as a list surrounded by [] brackets,
+// one entry per line.
+// An empty entry ("") is a blank line between paragraphs.
+//
+// Будто невесомые, мы парим над городом
+// Кисточкой Шагал, точно нарисованы
+// Тянет, тянет бездна, плохо, плохо, трезвым
+// Всё могло бы быть иначе между нами
+// Жаль, ты загадал... К чёрту!
+// Исчезнуть!
+// Исчезнуть!
+// Исчезнуть!
+// Исчезнуть…
+//
+// Ubel - Исчезнуть
+{
+  "NAME": "Русский",
+  "FONT_FAMILY": "Pixelated Times New Roman",
+  "CONTINUE_BUTTON": "Продолжить",
+
+  // ---------------------------------------------------------------
+  // Title screen, warning, shared buttons
+  // ---------------------------------------------------------------
+  // Shown right after the button icon on the title screen.
+  "START_BUTTON": "начать",
+  "WARNING": "Внимание: содержание игры затрагивает темы, которые могут оказаться неподходящими для детей и вызывать чувство беспокойства.",
+  "WARNING_CONTINUE": "продолжить",
+  "WARNING_EXIT": "выйти",
+  // The default button under most narration.
+  "BLINK_BUTTON": "моргнуть",
+  // {0} is the button icon.
+  "PRESS_TO_BLINK_BUTTON": "нажмите {0}, чтобы моргнуть",
+  "END_CALL_BUTTON": "закончить звонок",
+  "RESTART_POPUP": "Зажмите \"START\" на 5 секунд, чтобы Начать с Начала.",
+
+  // ---------------------------------------------------------------
+  // Control tutorial
+  // ---------------------------------------------------------------
+  // {0} is the button icon.
+  "TUTORIAL_GRAB": "Зажмите {0}, чтобы хватать.",
+  "TUTORIAL_GRAB_PS3": "Зажмите триггер L2 или R2, чтобы хватать.",
+  "TUTORIAL_GRAB_GAMECUBE": "Зажмите триггер L или R, чтобы хватать.",
+  "TUTORIAL_GRAB_RELEASE": "Отпустите {0}, чтобы разжать руку.",
+  "TUTORIAL_GRAB_RELEASE_GAMEPAD": "Отпустите триггер L или R, чтобы разжать руку.",
+  "TUTORIAL_MOVE": "Используйте {0}, чтобы передвигаться.",
+  "TUTORIAL_MOVE_GAMEPAD": "Используйте аналоговый стик, чтобы передвигаться.",
+
+  // ---------------------------------------------------------------
+  // Hover text: the small label shown when the hand is over something.
+  // ---------------------------------------------------------------
+  "HOVER_THOUGHT": "мысль",
+  "HOVER_MEMORY": "воспоминание",
+  "HOVER_PENCIL": "карандаш",
+  "HOVER_CUBE": "куб",
+  "HOVER_SPHERE": "сфера",
+  "HOVER_CONE": "конус",
+  "HOVER_DOCUMENT": "документ",
+  "HOVER_RESUME": "резюме",
+  "HOVER_CONTINUE": "продолжить",
+  "HOVER_COLOR_BLACK": "чёрный",
+  "HOVER_COLOR_WHITE": "белый",
+  "HOVER_COLOR_RED": "красный",
+  "HOVER_COLOR_YELLOW": "жёлтый",
+  "HOVER_COLOR_GREEN": "зелёный",
+  "HOVER_COLOR_CYAN": "голубой",
+  "HOVER_COLOR_BLUE": "синий",
+  "HOVER_COLOR_PINK": "розовый",
+  // Backpack stickers.
+  "HOVER_STICKER_PLUSHIE": "плюшевая игрушка",
+  "HOVER_STICKER_SMILEY": "смайлик",
+  "HOVER_STICKER_MUSTACHE": "усы",
+  // Optional: Made up font names for the resume
+  // (Arial/Helvetica, Times New Roman, Open Sans/Droid).
+  "HOVER_FONT_ARIAVETICA": "ariavetica",
+  "HOVER_FONT_TIMES_OLD": "times old",
+  "HOVER_FONT_OPEN_DROID": "open droid",
+  // Optional: Made up creature names for the avatar (fish, rabbit, chao).
+  "HOVER_CREATURE_FISHEE": "рыбуа",
+  "HOVER_CREATURE_ROBBIT": "кралик",
+  "HOVER_CREATURE_CHIO": "чио",
+
+  // ---------------------------------------------------------------
+  // Opening
+  // ---------------------------------------------------------------
+  "I_AM_ON_A_TRAIN": [
+    "Я в поезде",
+    "еду от одной точки к другой.",
+    "",
+    "Иногда он останавливается, и",
+    "я любуюсь видом.",
+    "",
+    "А иногда кажется,",
+    "что он едет и едет."
+  ],
+
+  // ---------------------------------------------------------------
+  // Thoughts: short lines that float around and get dragged away.
+  // They are drawn on a small single-line sign, so keep them short.
+  // All lowercase on purpose.
+  // ---------------------------------------------------------------
+  "THOUGHTS_INSTRUCTION": "Утащите мысли прочь, чтобы проснуться.",
+  "THOUGHTS_BABY": [
+    "почему небо голубое?",
+    "где моя мама?",
+    "я хочу есть"
+  ],
+  "THOUGHTS_TEENAGER": [
+    "я им нравлюсь?",
+    "что задали на завтра?",
+    "интересно, что она думает обо мне.",
+    "почему я не такая, как все"
+  ],
+  "THOUGHTS_ADULT": [
+    "что я делаю со своей жизнью?",
+    "я нравлюсь своим коллегам?",
+    "что происходит после смерти?",
+    "какой сейчас день недели?",
+    "мне нравится, что я делаю?",
+    "это навсегда?",
+    "буду ли я жалеть об этом?",
+    "стоит ли мне расстаться?",
+    "я чувствую себя пустой",
+    "кажется, я справляюсь с этим одна",
+    "почему мне так тревожно"
+  ],
+
+  // ---------------------------------------------------------------
+  // Childhood
+  // ---------------------------------------------------------------
+  "FIRST_MEMORY": [
+    "Моё самое первое воспоминание",
+    "было о трёх женщинах,",
+    "склонившихся надо мной.",
+    "",
+    "Они теребили моё лицо."
+  ],
+  "DRAWING_KIDS_DONE": "Мне нравится, как чувствуется карандаш на бумаге.",
+  "DRAWING_TEENAGER_DONE": "Это так легко, когда есть подсказки.",
+  "DRAWING_COLLEGE_DONE": "У меня не получается.",
+  "SHAPES_KIDS_CUBE": "Мне нравится, как он ощущается в моей руке.",
+  "SHAPES_KIDS_SPHERE": "Немного застряла, но это нормально.",
+  "SHAPES_KIDS_CONE": "Он колет мне руку, пока я его проталкиваю.",
+  // The top line and bottom line are shown at the top and bottom of the screen.
+  "BLINK_FORCE_THE_SHAPE_IN": "Я впихиваю фигуру силой.",
+  "BLINK_IT_PINCHES": "Она впивается и режет мне руку.",
+
+  // ---------------------------------------------------------------
+  // Chats
+  // The way they type grows up with them: kid chatspeak with typos
+  // ("any1", "wat r ur"), then teenager, then college, then formal
+  // work messages. Feel free to use the internet slang of your own
+  // language from the 2000s/2010s instead of translating literally.
+  // Emoticons like >.> and :) can stay as they are.
+  //
+  // о нет, интернет сленг нулевых.
+  // лично я ребёнок 2008-х, поэтому за тамошний сленг не шарю.
+  // в этом черновом варианте я опираюсь на собственный опыт общения в интернете в районе 2014-2017х годов.
+  // -Кекс
+  // ---------------------------------------------------------------
+  "CHAT_ME": "Я",
+  "CHAT_STEPHANIE": "Стефани",
+  "CHAT_USER_IS_ONLINE": "Пользователь зашёл в сеть.",
+  "CHAT_USER_IS_OFFLINE": "Пользователь не в сети.",
+
+  // Kids chat, inside an online pet game.
+  "CHAT_KIDS_HELLOOO_WORLD": "всем прив, кто нибудб тут есть?? >.>",
+  "CHAT_KIDS_HEHE_HI": "хехе привки",
+  "CHAT_KIDS_YO": "йо!!!!",
+  "CHAT_KIDS_UMMM_BYE": "эмммм пака",
+  "CHAT_KIDS_HEYYY_COM_BACK": "ЭЭЭЭ вернис",
+  "CHAT_KIDS_LOLK": "пхпхпх",
+  "CHAT_KIDS_OKOKOK": "ококок",
+  "CHAT_KIDS_O__O": "o__O",
+  "CHAT_KIDS_LOL": "Пхпхп",
+  "CHAT_KIDS_WAT_R_UR_FAVORITE_GAMES": "какие игры любиш?",
+  // "club newpets" is a made up game (Club Penguin + Neopets).
+  "CHAT_KIDS_THIS_1_I_LOVE_CLUB_NEWPETS": "вот эту!! я люблю club newpets :)!!",
+  "CHAT_KIDS_HOW_OLD_R_U": "скока тебе??",
+  "CHAT_KIDS_IMM_12": "мнее 12 .... >.>",
+  // This exact line is repeated later in CHAT_SURREAL_PRELUDE.
+  "CHAT_KIDS_WAT_DO_U_WANNA_B_WHEN_U_GROW_UP": "кем ты хлчешь быть када вырастиш??",
+  "CHAT_KIDS_IDK_MABY_A_MOVIE_DIRECTOR": "хз ... наверн режисёрам!!!",
+  "CHAT_KIDS_WANT_TO_BE_FRIENDS": "давай дружить??",
+  // "BuddyList" is a made up chat program. Don't translate the name.
+  "CHAT_KIDS_OK_ADD_ME_ON_BUDDYLIST": "ок :)) добавь меня в BuddyList",
+
+  // Teenager chat, still inside the pet game.
+  "CHAT_TEENAGER_HAVENT_SEEN_U_IN_A_WHILE": "давно теья не видела!",
+  "CHAT_TEENAGER_OMG_YES_HOW_ARE_U": "омг да как ты",
+  "CHAT_TEENAGER_WHATS_IT_TO_YA": "какое те дело?",
+  // "dory missouri" is a made up TV show (Hannah Montana).
+  "CHAT_TEENAGER_NEW_DORY_MISSOURI_EPISODE": "вышла новая серия дори миссури!!",
+  "CHAT_TEENAGER_I_HAVENT_WATCHED_IT_YET": "Я ЕЩЕ ЕЁ НЕ СМОТРЕЛА!!",
+  "CHAT_TEENAGER_YEZZZ_I_LOVE_DORY_MISSOURI": "ДЫААА я люблю дори миссури",
+  "CHAT_TEENAGER_WATS_THAT": "эта што ?",
+  "CHAT_TEENAGER_ITS_THE_TV_SHOW": "??? это сериал где девчонка ночью поп-звезда а днём дизайнер",
+  "CHAT_TEENAGER_OH_COOL": "О КРУТЯК!",
+  "CHAT_TEENAGER_SIDE_EYE": ">.>",
+  "CHAT_TEENAGER_WAIT_I_GTG_DO_HW": "падажи мне пора делать дз :) покеда!",
+  "CHAT_TEENAGER_OH_SHOOT_ME_TOO_BYE": "ох блин мне тоже! пока!",
+  "CHAT_TEENAGER_CYA": "пака!!!",
+  "CHAT_TEENAGER_SMILE": ":)",
+
+  // Teenager chat 2, on a messenger.
+  "CHAT_TEENAGER2_DO_YOU_REMEMBER_THAT_GAME": "стеф!! ты помнишь ту игру в которую мы раньше играли??",
+  "CHAT_TEENAGER2_YEAH_DO_YOU_WANT_TO_HOP_ON": "ДА!! хочешь зайти?",
+  "CHAT_TEENAGER2_ITS_STILL_UP": "она ещё жива ??",
+  "CHAT_TEENAGER2_AHH_NO_ITS_OKAY": "ах нет~~ всё нормально!",
+  "CHAT_TEENAGER2_AWWW_ITS_OK_NEXT_TIME": "блин ну ладно тогда в следующий раз >:)",
+  "CHAT_TEENAGER2_MY_ORIGINAL_ACCOUNT_GOT_SCAMMED": "лол мой акк взломали, дай я новый создам.",
+  "CHAT_TEENAGER2_LOL_WOOPS": "ЛОЛ УПС",
+  "CHAT_TEENAGER2_OKOK_SEE_YOU": "ОКОК давай!!",
+  "CHAT_TEENAGER2_SEE_U_IN_A_SEC": "скоро увидимся :)",
+
+  // College chat.
+  "CHAT_COLLEGE_IVE_BEEN_THINKING_OF_THAT_GAME": "стеф! я всё думала о той игре в которую мы раньше играли.",
+  "CHAT_COLLEGE_AHH_YES_IVE_BEEN_THINKING_OF_IT_TOO": "ах да, я тоже о ней думала",
+  "CHAT_COLLEGE_OMG_THE_FORUMS_ARE_DEAD_NOW": "омг форумы совсем вымерли...",
+  "CHAT_COLLEGE_THE_DEVELOPERS_TOTALLY_ABANDONED_IT": "разработчики полностью забросили её, никаких обнов.",
+  "CHAT_COLLEGE_CAN_YOU_GET_IT_TO_RUN": "у тебя она запускается?",
+  "CHAT_COLLEGE_NO_IT_DOESNT_RUN": "нет :( она не запускается... я хотела бы сделать похожую игру... я как раз учусь программировать ради этого!",
+  "CHAT_COLLEGE_OH_THATS_SO_COOL": "ого это так круто!",
+  "CHAT_COLLEGE_YEAH_WAIT_CAN_YOU_STAY_ONLINE": "ага! подожди, ты можешь остаться в сети?",
+
+  // College chat 2. They are drifting apart.
+  "CHAT_COLLEGE2_HEY_STEPH_YEARLY_CHAT": "Хей стеф :) ежегодная переписка?",
+  "CHAT_COLLEGE2_SURE_HOW_ARE_U_DOING": "давай... как у тебя дела?",
+  "CHAT_COLLEGE2_REALLY_GOOD_YOU": "отлично! у тебя как?",
+  "CHAT_COLLEGE2_THATS_GOOD_SAME_YOURE_WORKING_NOW": "это хорошо... да так же, всё ок. ты теперь работаешь?",
+  "CHAT_COLLEGE2_YEAH_ITS_BEEN_FUN": "ага, мне нравится!",
+  "CHAT_COLLEGE2_THATS_GOOD": "это хорошо",
+
+  // Work chat with a coworker. Formal, proper punctuation.
+  "CHAT_WORK_NAME": "Роберт Цанг",
+  "CHAT_WORK_I_AM_CURRENTLY_BLOCKED": "Здравствуйте. Я сейчас застрял из-за интерфейса, который вы делаете. Когда вы его закончите?",
+  "CHAT_WORK_OH_HEY_SORRY_ABOUT_THAT": "Здравствуйте! Да, прошу прощения, я всё ещё работаю над ним. Я дам знать, когда закончу его. Извините за неудобства.",
+  "CHAT_WORK_THE_TEAM_NEEDS_A_BETTER_TIME_ESTIMATE": "Да, просто команде нужна более точная оценка времени, чтобы мы могли расставить приоритеты в задачах.",
+  "CHAT_WORK_HOW_ABOUT_NEXT_THURSDAY": "Хорошо... Как насчёт... Следующего четверга?",
+  "CHAT_WORK_LETS_SET_UP_A_MEETING": "Хорошо, давайте тогда назначим встречу. Вы уверены, что вам не нужна помощь с этим?",
+  "CHAT_WORK_NO_NO_I_DONT_NEED_ANY_HELP": "Нет, нет... Мне не нужна помощь.",
+  "CHAT_WORK_WELL_BE_HERE": "Ну, в любом случае, мы всегда на связи.",
+  "CHAT_WORK_I_NEED_TO_DO_THIS_ON_MY_OWN": "Всё хорошо! Мне нужно сделать это самой.",
+  "CHAT_WORK_LETS_CIRCLE_BACK": "Окей. Давайте вернёмся к этому в следующий четверг. Хороших выходных.",
+
+  // Memorial chat.
+  "CHAT_MEMORIAL_HEY_STEPH_DO_YOU_REMEMBER_THAT_GAME": "Хей, Стеф. Ты помнишь ту игру, в которую мы раньше играли?",
+  "CHAT_MEMORIAL_ERROR_SENDING_MESSAGE": "Ошибка отправки сообщения. Аккаунт недоступен.",
+  "CHAT_MEMORIAL_VIEW_PROFILE": "Открыть профиль Стефани",
+  "CHAT_MEMORIAL_LOADING": "Загрузка...",
+
+  // Surreal chat prelude, back inside the pet game as kids.
+  // The first two lines here are the same as CHAT_KIDS on purpose.
+  "CHAT_SURREAL_PRELUDE_HELLOOO_WORLD": "всем прив, кто нибудб тут есть?? >.>",
+  "CHAT_SURREAL_PRELUDE_HEHE_HI": "хехе привки",
+  "CHAT_SURREAL_PRELUDE_OMG_I_LOVE_UR_AVATAR": "омг!! я люблю твой аватар!!!",
+  "CHAT_SURREAL_PRELUDE_TY": "спс :^)",
+  "CHAT_SURREAL_PRELUDE_WAT_DO_U_WANNA_B_WHEN_U_GROW_UP": "кем ты хлчешь быть када вырастиш??",
+
+  // Surreal chat. Starts as kid chatspeak, then halfway through
+  // ("steph...") they talk as adults, then it snaps back to kid
+  // chatspeak at "okay i gtg".
+  // 
+  // я не до конца уверен в последних строчках, будто небольшой диссонанс возникает от того, как они общаются. (CHAT_SURREAL_ILL_SEE_YOU_ONLINE_TOMORROW_QUESTION и CHAT_SURREAL_ILL_SEE_YOU_ONLINE_TOMORROW)
+  // -Кекс
+  "CHAT_SURREAL_WAIT_U_DREW_THIS": "погодь?? ты это нарисовала ;-; ? блин так талантливо qq",
+  "CHAT_SURREAL_AWW_TANKYU": "бблин пасибаа",
+  "CHAT_SURREAL_CAN_I_USE_IT": "я могу его использовать??",
+  "CHAT_SURREAL_OFC_IT_WILL_BE_AN_HONOR": "канешн!! это будет честью :)",
+  "CHAT_SURREAL_YAY_LOOK_AT_ME": "УОА! СМОТРИ!!! такая милата",
+  "CHAT_SURREAL_DO_U_WANNA_HELP_DECORATE_MY_ROOM": "хехе!! ты хочшь помочь мне украсить комнату??",
+  "CHAT_SURREAL_MY_PARENTS_ARE_FIGHTING_AGAIN": "ах подожди. мои родители опять ссорятся",
+  "CHAT_SURREAL_STEPH": "стеф...",
+  "CHAT_SURREAL_YEAH": "да?",
+  "CHAT_SURREAL_WE_WERE_THE_ONLY_ONES": "иногда я думаю о том, что мы были единственными, кто понимал друг друга.",
+  "CHAT_SURREAL_WE_GREW_UP_TOGETHER": "мы выросли вместе, не так ли?",
+  "CHAT_SURREAL_WHY_DID_YOU_LEAVE_ME_TO_DO_THIS_BY_MYSELF": "зачем ты оставила меня одну со всем этим?",
+  "CHAT_SURREAL_I_DIDNT_MEAN_TO": "я не нарочно. мне было просто так тяжело.",
+  "CHAT_SURREAL_I_KEEP_COMING_BACK_HERE": "я продолжаю возвращаться сюда...",
+  "CHAT_SURREAL_SOMETIMES_I_ESCAPED_BACK_HERE_TOO": "иногда я тоже сюда сбегала. мы были гораздо счастливее.",
+  "CHAT_SURREAL_ITS_SO_PAINFUL": "это так больно.",
+  "CHAT_SURREAL_I_DIDNT_KNOW_IT_WOULD_HURT_YOU": "я не знала, что тебе будет так больно.",
+  "CHAT_SURREAL_I_MISS_YOU": "я по тебе скучаю.",
+  "CHAT_SURREAL_I_CANT_DO_THIS_ALONE": "я не справлюсь одна.",
+  "CHAT_SURREAL_WHY_DID_YOU_HAVE_TO_LEAVE_ME": "почему ты ушла?",
+  "CHAT_SURREAL_I_MISS_YOU_TOO": "я тоже скучаю по тебе. ты справишься.",
+  "CHAT_SURREAL_SAD_FACE": ":(",
+  "CHAT_SURREAL_YOURE_NOT_ALONE": "ты не одна. ты хранишь в себе частичку каждого, кого когда-либо повстречала.",
+  // Same as CHAT_SURREAL_I_MISS_YOU but without the period.
+  "CHAT_SURREAL_I_MISS_YOU_2": "я по тебе скучаю",
+  "CHAT_SURREAL_NEVER_KNOWING": "возможно, тебе придётся прожить всю жизнь, так и не узнав.",
+  "CHAT_SURREAL_NO": "нет.",
+  "CHAT_SURREAL_OKAY_I_MISS_YOU": "хорошо. я скучаю по тебе.",
+  "CHAT_SURREAL_YOUVE_GOT_NO_CHOICE": "у тебя нет выбора",
+  // "callign" is a typo on purpose.
+  "CHAT_SURREAL_OKAY_I_GTG": "окей мне пара. мне родители званят :\\",
+  "CHAT_SURREAL_ILL_SEE_YOU_ONLINE_TOMORROW_QUESTION": "увидимся завтра в сети?",
+  "CHAT_SURREAL_ILL_SEE_YOU_ONLINE_TOMORROW": "увидимся завтра в сети",
+
+  // ---------------------------------------------------------------
+  // School, college and work assignments
+  // ---------------------------------------------------------------
+  // These three lines are reused for school, resumes and work.
+  "SHAPES_I_WISH_I_COULD_FOCUS_MORE": "Если бы я только могла сосредоточиться.",
+  "SHAPES_HOW_DID_THIS_HAPPEN_AGAIN": "Как это опять случилось?",
+  "SHAPES_ANOTHER_SLEEPLESS_NIGHT": "Ох, очередная бессонная ночь.",
+  // Optional: File names. The last one is a keyboard smash.
+  "FILE_TEENAGER_1": "неделя4.docx",
+  "FILE_TEENAGER_2": "гл5_отелло .docx",
+  "FILE_TEENAGER_3": "фывазфпсих .docx",
+  "FILE_WORK_1": "Роберт_Дизайн.PSD",
+  "FILE_WORK_2": "дизайнОриона Док.docx",
+  "FILE_WORK_3": "продажи 2023.xlsx",
+
+  "GRASS": [
+    "Я выдёргиваю травинки",
+    "и позволяю им выскальзывать из рук.",
+    "",
+    "\"Попытайся вспомнить...\"",
+    "",
+    "Однажды в будущем,",
+    "я оглянусь",
+    "и вспомню этот момент."
+  ],
+
+  // A parent's voice. The grammar is broken on purpose, it is an
+  // immigrant parent speaking their second language.
+  //
+  // дилемма.
+  // как адаптировать плохо звучащий русский язык?
+  // момент серьёзный, а ломанный русский будет рушить атмосферу.
+  // -Кекс
+  "SHAPES_PARENT_YOU_NOT_WORK_HARD": "Ты недостаточно усердствуешь.",
+  "SHAPES_PARENT_NEVER_GET_UP_ON_TIME": "Никогда вовремя не встаёшь.",
+  "SHAPES_PARENT_YOU_WANT_TO_BE_FAILURE": "Хочешь быть неудачницей?",
+
+  // Work messages from coworkers.
+  // "EoD" is "end of day", "lgtm" is "looks good to me".
+  "WORK_MESSAGE_ROBERT_NAME": "Роберт Цанг",
+  "WORK_MESSAGE_ROBERT_REQUEST": "Привет, вы успеете доделать дизайн к концу дня?",
+  "WORK_MESSAGE_ROBERT_REPLY": "Спасибо. У меня всё ещё есть пара вопросов по дизайну.",
+  "WORK_MESSAGE_ORION_NAME": "Орион Дракос",
+  "WORK_MESSAGE_ORION_REQUEST": "жду тот документ с дизайном на рассмотрение",
+  "WORK_MESSAGE_ORION_REPLY": "годно",
+  "WORK_MESSAGE_MICHAEL_NAME": "Майкл Дэниелс",
+  "WORK_MESSAGE_MICHAEL_REQUEST": "Можешь отправить копию отчёта о продажах? :)",
+  "WORK_MESSAGE_MICHAEL_REPLY": "Отлично. Может, как-нибудь поужинаем?",
+
+  // ---------------------------------------------------------------
+  // Memorial page
+  // ---------------------------------------------------------------
+  "MEMORIAL_REMEMBERING": "В память о",
+  "MEMORIAL_NAME": "Стефани Хюинь",
+  "MEMORIAL_YEARS": "1998 — 2023",
+
+  // ---------------------------------------------------------------
+  // Time passing. Each line is its own screen.
+  // ---------------------------------------------------------------
+  "TIME_PASSING": [
+    "Я смотрю в окно своего офиса.",
+    "Я на свадьбе своей лучшей подруги.",
+    "Я праздную свой 24-й день рождения.",
+    "Я только что рассталась.",
+    "Я держу ребёнка моей подруги.",
+    "Я праздную свой 25-й день рождения.",
+    "Я только что переехала в другой город.",
+    "Я праздную свой 29-й день рождения.",
+    "Почему все дни сливаются в один?"
+  ],
+  // "Why does time keep moving?" shown one word per screen, faster
+  // and faster. You can split your sentence into more or fewer
+  // pieces, each entry is its own screen.
+  "WHY_DOES_TIME_KEEP_MOVING": [
+    "Почему",
+    "время",
+    "продолжает",
+    "идти?"
+  ],
+
+  // ---------------------------------------------------------------
+  // Slowing down
+  // The first half is the therapist's voice.
+  // The second half (shown in blue italics) is the player's voice.
+  //
+  // Как мне подстроить слова? "Апатично" или "Апатию"? Я пока оставлю в виде существительного.
+  // -Кекс
+  // ---------------------------------------------------------------
+  "SLOW_DOWN_THERAPIST": [
+    "Помедленнее.",
+    "Продолжай тянуть. Не отпускай.",
+    "Дыши.",
+    "Вдох.",
+    "Выдох.",
+    "Что ты чувствуешь?",
+    "Раздражение?",
+    "Тревогу?",
+    "Безразличие?"
+  ],
+  // This is one long thought broken up across screens, so the last
+  // two entries are one sentence split in half.
+  "SLOW_DOWN_ME": [
+    "Наверное, я чувствую...",
+    "Одиночество.",
+    "Словно в моём теле есть дыра странной формы.",
+    "И я пытаюсь заполнить её хобби, людьми, вещами.",
+    "Но ничего из этого не вмещается.",
+    "Кажется, что сперва они подходят, и я пытаюсь впихнуть их силой, но в итоге причиняю боль.",
+    "Я продолжаю возвращаться к старым воспоминаниям.",
+    "Старым видеоиграм.",
+    "Когда казалось, что время бесконечно растягивается в обе стороны,",
+    "и дни длились вечно."
+  ],
+  "PERMISSION_TO_FEEL_SAD": "Я разрешаю себе грустить.",
+  "PERMISSION_TO_FEEL_HAPPY": "Я разрешаю себе радоваться.",
+
+  // ---------------------------------------------------------------
+  // The scar
+  // The first two are the player's voice, the rest is the therapist.
+  // ---------------------------------------------------------------
+  "SCAR_I_REMEMBER": ["Я помню, как получила этот шрам на ладони."],
+  "SCAR_WHEN_I_SEE_IT": [
+    "Когда я его вижу,",
+    "я вспоминаю тот момент.",
+    "Словно это воспоминание пронизывает время."
+  ],
+  "SCAR_THE_EMPTINESS": [
+    "Пустота, что ты чувствуешь, такая же настоящая,",
+    "как и шрам на твоей руке."
+  ],
+  "SCAR_STRETCHING_BACK": ["Простирающаяся до детства."],
+  "SCAR_PAIN_REPEATS": [
+    "Боль повторяется и перетекает.",
+    "С одного человека на другого."
+  ],
+  "SCAR_UNFORTUNATE_RESPONSIBILITY": [
+    "Остановить поток боли —",
+    "нелёгкая ответственность."
+  ],
+  "SCAR_YOU_ALONE": ["Но этот выбор делаешь только ты."],
+  // These float by in the background on small single-line signs,
+  // so keep them short.
+  "SCAR_FLOATING_THOUGHTS": [
+    "Я хочу чувствовать себя любимой",
+    "Я хочу чувствовать свою принадлежность",
+    "Я хочу чувствовать общность",
+    "Я хочу чувствовать себя увиденной",
+    "Я хочу чувствовать себя услышанной"
+  ],
+
+  // ---------------------------------------------------------------
+  // Therapy
+  // ---------------------------------------------------------------
+  "THERAPY_WHERE_ARE_YOU_NOW": ["Где ты сейчас?"],
+  // The player's voice.
+  "THERAPY_ISNT_THIS_ME": [
+    "Разве это не я?",
+    "Парящий комок тревог?"
+  ],
+  "THERAPY_NO_I_SEE_YOU": [
+    "Нет... Я вижу тебя...",
+    "Вот здесь."
+  ],
+  "THERAPY_THE_YOU_THAT_EXISTS_INSIDE": ["Та ты, что существует внутри."],
+  "THERAPY_YOUR_THOUGHTS_ARE_VOICES": [
+    "Твои мысли это бестелесные голоса людей из прошлого, звучащие эхом сквозь время."
+  ],
+  "THERAPY_YOU_ARE_NOT_YOUR_THOUGHTS": [
+    "Ты — это не твои мысли и не твои чувства.",
+    "Ты — нечто гораздо более лёгкое."
+  ],
+  "THERAPY_DRAG_THE_THOUGHTS_AWAY": [
+    "Утаскивай мысли прочь,",
+    "чтобы отпустить их."
+  ],
+
+  // Each thought is dragged away, then its response is shown.
+  // Some of the thoughts are repeated from THOUGHTS_ADULT.
+  // Thoughts are drawn on a small single-line sign, so keep them short.
+  "THERAPY_THOUGHT_1": "я никчёмная",
+  "THERAPY_RESPONSE_1": "я принимаю эту мысль?",
+  "THERAPY_THOUGHT_2": "нравлюсь ли я своим коллегам?",
+  "THERAPY_RESPONSE_2": "это нормально — переживать, как ко мне относятся",
+  "THERAPY_THOUGHT_3": "какой сейчас день недели?",
+  "THERAPY_RESPONSE_3": "невозможно держать всё под контролем",
+  "THERAPY_THOUGHT_4": "мне нравится, что я делаю?",
+  "THERAPY_RESPONSE_4": "я найду время, чтобы обдумать",
+  "THERAPY_THOUGHT_5": "это навсегда?",
+  "THERAPY_RESPONSE_5": "могу ли я что-то сделать с этим беспокойством?",
+  "THERAPY_THOUGHT_6": "я чувствую себя пустой",
+  "THERAPY_RESPONSE_6": "может, мне стоит с кем-нибудь связаться",
+  "THERAPY_THOUGHT_7": "кажется, я справляюсь с этим одна",
+  "THERAPY_RESPONSE_7": "стоит ли просить о помощи?",
+  "THERAPY_THOUGHT_8": "почему мне так тревожно",
+  "THERAPY_RESPONSE_8": "все испытывают тревогу — так тело говорит нам, что что-то может быть не так.",
+  "THERAPY_THOUGHT_9": "почему у меня такие мысли?",
+  "THERAPY_RESPONSE_9": "мысли приходят сами по себе",
+  "THERAPY_THOUGHT_10": "я всё время ошибаюсь",
+  "THERAPY_RESPONSE_10": "это происходит со всеми",
+  "THERAPY_THOUGHT_11": "мне нужно столько всего сделать",
+  "THERAPY_RESPONSE_11": "делай это шаг за шагом",
+  "THERAPY_THOUGHT_12": "я боюсь ошибиться",
+  "THERAPY_RESPONSE_12": "неудачи — часть обучения",
+  "THERAPY_THOUGHT_13": "я не чувствую себя мотивированной",
+  "THERAPY_RESPONSE_13": "отдыхать и восстанавливаться нормально",
+  "THERAPY_THOUGHT_14": "я чувствую себя такой уставшей",
+  "THERAPY_RESPONSE_14": "я доверюсь своему телу",
+
+  // The top line and bottom line are shown at the top and bottom of the screen.
+  "THERAPY_OUR_TIME_IS_ALMOST_UP": "Наше время почти вышло.",
+  "THERAPY_WHAT_ARE_YOU_THINKING_NOW": "О чём ты сейчас думаешь?",
+  // The player's voice.
+  "THERAPY_IT_TOOK_ME_2_YEARS": ["Только через два года я смогла заплакать о Стефани..."],
+  "THERAPY_THESE_THINGS_TAKE_TIME": ["Такие вещи требуют времени."],
+  // The player's voice.
+  "THERAPY_WILL_I_EVER_GET_BETTER": ["Станет ли мне когда-нибудь лучше?"],
+  // Also shown as the therapist's last chat message in the video call.
+  "THERAPY_IM_SURE": [
+    "Я уверен.",
+    "Ты ведь сама решила обратиться сюда, не так ли?",
+    "",
+    "Обращение за помощью — уже первый шаг.",
+    "",
+    "Увидимся на следующей неделе :)"
+  ],
+
+  // The video call window after the session.
+  "THERAPY_CALL_NAME": "Д-р Гибби — Клинический Психолог",
+  "THERAPY_CALL_TIME": "17:10",
+  "THERAPY_CALL_SEND_BUTTON": "Отправить",
+  "THERAPY_CALL_MEETING_ENDED": "Встреча завершилась",
+  "THERAPY_CALL_YOU_HAVE_ENDED_THE_CALL": "Вы завершили звонок с организатором.",
+  "THERAPY_CALL_OK_BUTTON": "ОК",
+
+  // ---------------------------------------------------------------
+  // Ending
+  // ---------------------------------------------------------------
+  "MEMORY_UNIVERSE": [
+    "В моём сознании",
+    "каждое воспоминание, что у меня есть,",
+    "— это своя собственная",
+    "карманная вселенная.",
+    "",
+    "Простирающаяся в пространстве,",
+    "вечно повторяясь."
+  ],
+  "SOMEWHERE_OUT_THERE_CLASS": [
+    "Где-то там,",
+    "я вечно",
+    "сижу в классе,",
+    "ожидая, когда зазвонит звонок."
+  ],
+  "SOMEWHERE_OUT_THERE_AUNTS": [
+    "Где-то там,",
+    "меня вечно",
+    "теребят и тискают",
+    "мои тёти."
+  ],
+  "SOMEWHERE_OUT_THERE_VIDEO_GAME": [
+    "Где-то там,",
+    "я вечно",
+    "играю в онлайн видеоигру",
+    "с моей подругой."
+  ],
+
+  // ---------------------------------------------------------------
+  // Homework (Added 4/11/26)
+  // ---------------------------------------------------------------
+  "HOMEWORK_PORTAL_DUE": "До",
+  "HOMEWORK_PORTAL_POINTS": "Балл",
+  "HOMEWORK_PORTAL_TURNED_IN": "Сдано!",
+  "HOMEWORK_PORTAL_LATE": "поздно",
+  "HOMEWORK_PORTAL_SUBMISSION_DETAILS": "Детали Отправки",
+  "HOMEWORK_PORTAL_DOWNLOAD": "Скачать {0}",
+  "HOMEWORK_PORTAL_GRADE": "Оценка",
+  "HOMEWORK_PORTAL_PTS_POSSIBLE": "{0} баллов возможно",
+  "HOMEWORK_PORTAL_FILE_UPLOAD": "Загрузить Файл",
+  "HOMEWORK_PORTAL_UPLOAD_A_FILE_OR": "Загрузите файл или выберите существующий.",
+  "HOMEWORK_PORTAL_CHOOSE_FILE": "Выбрать файл",
+  "HOMEWORK_PORTAL_SUBMIT_ASSIGNMENT": "Сдать задание",
+
+  "HOMEWORK_WEEK4_TITLE": "Задание Четвертой Недели",
+  "HOMEWORK_WEEK4_DUE_DATE": "4 сент, 11:59",
+  "HOMEWORK_WEEK4_SUBMISSION_DATE": "5 сент, 1:05",
+  // Filename is FILE_TEENAGER_1 but with space removed.
+
+  "HOMEWORK_OTHELLO_TITLE": "Отелло - Глава 5",
+  "HOMEWORK_OTHELLO_DUE_DATE": "2 сент, до 11:59",
+  "HOMEWORK_OTHELLO_SUBMISSION_DATE": "5 сент, 1:05",
+  // Filename is FILE_TEENAGER_2 but with space removed.
+
+  "HOMEWORK_PSYCH_TITLE": "Эссе: природа/воспитание в психологии",
+  "HOMEWORK_PSYCH_DUE_DATE": "1 сент, до 11:59",
+  "HOMEWORK_PSYCH_SUBMISSION_DATE": "5 сент, 1:05",
+  // Filename is FILE_TEENAGER_3 but with space removed.
+
+  // ---------------------------------------------------------------
+  // Resume (Added 4/11/26)
+  // ---------------------------------------------------------------
+  "RESUME_TITLE": "Резюме",
+  "RESUME_EDUCATION_TITLE": "ОБРАЗОВАНИЕ",
+  "RESUME_MAJOR": "Управление Бизнесом",
+  "RESUME_BACHELORS": "Бакалавр Наук в Области Делового Администрирования",
+  // Not sure for each country, but 3.1 GPA is a B grade.
+  // Best GPA would be 4.0 GPA.
+  // 
+  // В россии нет такого :/
+  // посему возьму термин среднего балла и переведу балл героини в российские реалии.
+  // -Кекс
+  "RESUME_GPA": "Средний балл: 4",
+  "RESUME_WORK_EXPERIENCE_TITLE": "ОПЫТ РАБОТЫ",
+  "RESUME_TODO": "не забыть: вписать сюда чё нибудь до отправки резюме!!!! хз может опыт в клубе или чтото типо того",
+
+  // ---------------------------------------------------------------
+  // Company Emails (Added 4/11/26)
+  // ---------------------------------------------------------------
+  "EMAIL_COMPANY_APPLICATION": "Заявление о приеме на работу",
+  "EMAIL_DEAR_APPLICANT": "Уважаемый кандидат,",
+  "EMAIL_LINK_REPLY": "Ответить",
+  "EMAIL_LINK_FORWARD": "Переслать",
+  "EMAIL_REJECTION": "<i>Компания</i> ежегодно получает сотни заявок от талантливых соискателей. <b>К сожалению, рассмотрев вашу заявку,</b> мы не нашли подходящей для вас вакансии на данный момент.",
+  "EMAIL_ACCEPTANCE": "Вы не прошли первый тур собеседований, но <b>мы рады принять вас на стажировку</b> где вы сможете освоить необходимые навыки для подготовки к работе.",
+
+  // ---------------------------------------------------------------
+  // End credits. Each line is its own screen.
+  // {0} is the person's handle (like @nohurryhen).
+  // ---------------------------------------------------------------
+  "END_CREDITS_SOUNDTRACK": "Саундтрек: {0}",
+  "END_CREDITS_VIDEOGRAPHY": "Видеосъёмка: {0}",
+  "END_CREDITS_DRAWINGS": "Рисунки: {0}",
+  // A song. Keep the song title in English.
+  "END_CREDITS_SONG": "\"I've changed too\": {0}",
+  "END_CREDITS_WRITTEN_AND_DIRECTED": "Сценарий и постановка: {0}",
+
+  // Translation Credits
+  "SHOW_TRANSLATION_CREDITS": true,
+  // Put as many credits here as you want.
+  // Please don't put a virus here :(
+  //
+  // Sure thing, there are TOTALLY NOT A SINGLE trojan, malware, ransomware, spyware, adware, rootkit, worm, keylogger, cryptojacker, logic bomb and so on.
+  "CREDITS": [
+    // { "name": "Your Name", "website": "https://example.com/" },
+    { "name": "JustKekc", "website": "https://t.me/JustPogreb" }
+  ],
+
+  // Ignore this last line, it's so each line can have a comma at the end.
+  "": null
+}
